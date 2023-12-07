@@ -27,4 +27,14 @@ class Plateau {
 
   }
 
+  def tablePleine: Unit => Boolean = {
+    for i <- 0 until 20
+    j <- 0 until 10
+    if (!table(i)(j))
+    yield return false
+    true
+  }
+
+  
+
 }

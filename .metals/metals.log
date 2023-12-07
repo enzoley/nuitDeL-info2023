@@ -27,3 +27,8 @@ déc. 07, 2023 9:32:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancell
 WARNING: Unmatched cancel notification for request id 2
 2023.12.07 21:32:49 INFO  time: code lens generation in 14s
 2023.12.07 21:32:49 INFO  time: code lens generation in 1.91s
+déc. 07, 2023 9:34:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 16
+2023.12.07 21:39:02 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Plateau.scala
+2023.12.07 21:41:02 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Plateau.scala
+2023.12.07 21:43:42 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Tetris.scala
