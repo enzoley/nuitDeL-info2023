@@ -5,6 +5,12 @@
     <title>Title</title>
 </head>
 <body>
+<div th:each="question : ${questions}">
+    <span th:text="${question.getText()}"></span>
+    <div th:each="reponse:${reponses}">
+        <button th:text="${reponse.getText()}"></button>
+    </div>
+</div>
 
 </body>
 </html>
