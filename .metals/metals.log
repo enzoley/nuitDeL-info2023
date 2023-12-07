@@ -32,3 +32,250 @@ WARNING: Unmatched cancel notification for request id 16
 2023.12.07 21:39:02 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Plateau.scala
 2023.12.07 21:41:02 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Plateau.scala
 2023.12.07 21:43:42 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Tetris.scala
+2023.12.07 21:45:56 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Tetris.scala
+2023.12.07 22:30:42 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Tetris.scala
+2023.12.07 22:31:06 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Tetris.scala
+2023.12.07 22:32:42 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Tetris.scala
+2023.12.07 22:33:22 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Tetris.scala
+2023.12.07 22:35:02 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Tetris.scala
+2023.12.07 22:35:13 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/Jeu.scala
+2023.12.07 22:35:17 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Tetris.scala
+2023.12.07 22:35:25 WARN  Could not find semantic tokens for: file:///Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/Jeu.scala
+2023.12.07 22:35:29 WARN  Could not find semantic tokens for: file:///Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/Jeu.scala
+2023.12.07 22:35:35 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/Jeu.scala
+2023.12.07 22:35:54 ERROR Failed to tokenize input for semantic tokens for /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/Jeu.scala
+scala.meta.tokenizers.TokenizeException: <input>:5: error: illegal character '\u00a8'
+    private val plateau : ¨p
+                          ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchOther$1(LegacyScanner.scala:469)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:474)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:539)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+2023.12.07 22:36:00 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/Jeu.scala
+2023.12.07 22:36:03 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/Jeu.scala
+2023.12.07 22:36:17 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Jeu.scala
+déc. 07, 2023 10:36:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1067
+déc. 07, 2023 10:37:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1242
+déc. 07, 2023 10:38:42 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.12.07 22:40:29 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Jeu.scala
+2023.12.07 22:40:31 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Tetris.scala
+2023.12.07 22:40:36 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Tetris.scala
+2023.12.07 22:40:37 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Tetris.scala
+2023.12.07 22:48:32 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/Block.scala
+2023.12.07 22:48:47 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Block.scala
+2023.12.07 22:48:52 WARN  Could not find semantic tokens for: file:///Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Block.scala
+2023.12.07 22:48:53 WARN  Could not find semantic tokens for: file:///Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Block.scala
+2023.12.07 22:48:58 WARN  Could not find semantic tokens for: file:///Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Block.scala
+2023.12.07 22:49:01 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Block.scala
+2023.12.07 22:51:11 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Block.scala
+2023.12.07 22:51:19 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Block.scala
+2023.12.07 22:51:20 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Block.scala
+2023.12.07 22:51:23 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Block.scala
+2023.12.07 22:51:26 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Block.scala
+2023.12.07 22:52:16 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Block.scala
+déc. 07, 2023 10:52:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1858
+déc. 07, 2023 10:52:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1896
+2023.12.07 22:52:52 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Block.scala
+déc. 07, 2023 10:55:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2113
+2023.12.07 22:57:27 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Block.scala
+déc. 07, 2023 10:57:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2316
+2023.12.07 22:57:45 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Block.scala
+2023.12.07 22:58:52 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Block.scala
+2023.12.07 22:58:58 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Block.scala
+2023.12.07 23:00:40 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Block.scala
+2023.12.07 23:01:35 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Block.scala
+2023.12.07 23:01:47 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Block.scala
+2023.12.07 23:02:00 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Block.scala
+2023.12.07 23:04:40 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Jeu.scala
+2023.12.07 23:11:52 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Plateau.scala
+2023.12.07 23:16:40 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Plateau.scala
+2023.12.07 23:20:09 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Block.scala
+2023.12.07 23:20:49 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Block.scala
+2023.12.07 23:20:57 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Jeu.scala
+2023.12.07 23:22:56 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Plateau.scala
+2023.12.07 23:25:35 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Plateau.scala
+2023.12.07 23:27:02 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Plateau.scala
+2023.12.07 23:27:09 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Plateau.scala
+2023.12.07 23:28:41 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Plateau.scala
+2023.12.07 23:32:16 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Plateau.scala
+2023.12.07 23:32:42 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Plateau.scala
+déc. 07, 2023 11:32:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4389
+2023.12.07 23:33:02 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Plateau.scala
+déc. 07, 2023 11:33:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4433
+2023.12.07 23:33:22 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Plateau.scala
+2023.12.07 23:33:39 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Plateau.scala
+2023.12.07 23:35:49 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Plateau.scala
+2023.12.07 23:35:55 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Plateau.scala
+2023.12.07 23:36:19 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Jeu.scala
+déc. 07, 2023 11:36:57 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.12.07 23:37:07 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/NaturellementQuiz/src/main/java/fr/nuit/de/l/info/NaturellementQuiz/model/Question.java
+déc. 07, 2023 11:37:07 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /Users/enzo/Documents/nuitDeL-info2023/.metals/.reports/metals-full/2023-12-07/r_compiler-error_23-37-07-495.md
+déc. 07, 2023 11:37:09 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /Users/enzo/Documents/nuitDeL-info2023/.metals/.reports/metals-full/2023-12-07/r_compiler-error_23-37-09-267.md
+déc. 07, 2023 11:37:10 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /Users/enzo/Documents/nuitDeL-info2023/.metals/.reports/metals-full/2023-12-07/r_compiler-error_23-37-10-141.md
+2023.12.07 23:37:10 INFO  time: code lens generation in 1.28s
+2023.12.07 23:49:22 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Plateau.scala
+2023.12.07 23:50:02 ERROR Failed to tokenize input for semantic tokens for /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Plateau.scala
+scala.meta.tokenizers.TokenizeException: <input>:130: error: empty quoted identifier
+            b.positionHG = (b.positionHG._1,b.positionHG._2-1)``
+                                                              ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getBackquotedIdent(LegacyScanner.scala:485)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:337)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:539)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+2023.12.07 23:50:02 ERROR Failed to tokenize input for semantic tokens for /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Plateau.scala
+scala.meta.tokenizers.TokenizeException: <input>:130: error: empty quoted identifier
+            b.positionHG = (b.positionHG._1,b.positionHG._2-1)``
+                                                              ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getBackquotedIdent(LegacyScanner.scala:485)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:337)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:539)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+2023.12.07 23:50:22 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Plateau.scala
+2023.12.07 23:50:34 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Plateau.scala
+2023.12.07 23:52:21 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Jeu.scala
+2023.12.07 23:52:39 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Jeu.scala
+2023.12.07 23:52:54 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Jeu.scala
+2023.12.07 23:53:22 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Jeu.scala
+2023.12.07 23:54:00 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Jeu.scala
+2023.12.07 23:54:14 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Jeu.scala
+2023.12.07 23:55:05 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Jeu.scala
+2023.12.07 23:57:07 ERROR Failed to tokenize input for semantic tokens for /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Jeu.scala
+scala.meta.tokenizers.TokenizeException: <input>:25: error: unclosed quoted identifier
+    }`
+     ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getBackquotedIdent(LegacyScanner.scala:489)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:337)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:539)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+2023.12.07 23:57:25 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Jeu.scala
+2023.12.07 23:58:56 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Plateau.scala
+2023.12.08 00:01:09 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Plateau.scala
+2023.12.08 00:01:29 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Plateau.scala
+2023.12.08 00:03:40 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Plateau.scala
+2023.12.08 00:04:23 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Plateau.scala
+2023.12.08 00:04:37 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Plateau.scala
+2023.12.08 00:05:51 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Jeu.scala
+2023.12.08 00:10:10 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Jeu.scala
+2023.12.08 00:10:45 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Jeu.scala
+2023.12.08 00:10:54 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Jeu.scala
+déc. 08, 2023 12:13:33 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /Users/enzo/Documents/nuitDeL-info2023/.metals/.reports/metals-full/2023-12-08/r_compiler-error_00-13-33-790.md
+déc. 08, 2023 12:14:26 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /Users/enzo/Documents/nuitDeL-info2023/.metals/.reports/metals-full/2023-12-08/r_compiler-error_00-14-26-690.md
+2023.12.08 00:15:00 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Plateau.scala
+2023.12.08 00:16:03 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Plateau.scala
+2023.12.08 00:16:27 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Jeu.scala
+2023.12.08 00:16:36 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Jeu.scala
+2023.12.08 00:19:33 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Jeu.scala
+2023.12.08 00:21:53 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Jeu.scala
+déc. 08, 2023 12:22:32 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6913
+2023.12.08 00:22:43 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Jeu.scala
+2023.12.08 00:25:06 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Jeu.scala
+déc. 08, 2023 12:25:07 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6992
+2023.12.08 00:25:10 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Jeu.scala
+2023.12.08 00:25:27 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Jeu.scala
+2023.12.08 00:25:28 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Jeu.scala
+2023.12.08 00:25:40 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Jeu.scala
+2023.12.08 00:26:29 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Jeu.scala
+2023.12.08 00:26:44 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Jeu.scala
+2023.12.08 00:30:02 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Jeu.scala
+2023.12.08 00:30:08 WARN  no build target for: /Users/enzo/Documents/nuitDeL-info2023/fr/watibg/backend/tetris/Jeu.scala

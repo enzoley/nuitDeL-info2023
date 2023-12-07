@@ -1,3 +1,13 @@
+file://<WORKSPACE>/fr/watibg/backend/tetris/Plateau.scala
+### java.lang.IndexOutOfBoundsException: 0
+
+occurred in the presentation compiler.
+
+action parameters:
+offset: 883
+uri: file://<WORKSPACE>/fr/watibg/backend/tetris/Plateau.scala
+text:
+```scala
 package backend.tetris
 
 import Block._
@@ -43,7 +53,7 @@ class Plateau {
   }
 
   def estPerdue : Unit => Boolean = {
-    table(0)(1) || table(0)(2) || table(0)(3) || table(0)(4) || table(0)(5) || table(0)(6) || table(0)(7) || table(0)(8) || table(0)(9) || table(1)(4) || table(1)(5)
+    table(0)(@@)
   }
 
   def addBlock : (Int, Int) => Block => Unit = (x,y) => b => {
@@ -248,3 +258,25 @@ class Plateau {
 
 
 
+
+```
+
+
+
+#### Error stacktrace:
+
+```
+scala.collection.LinearSeqOps.apply(LinearSeq.scala:131)
+	scala.collection.LinearSeqOps.apply$(LinearSeq.scala:128)
+	scala.collection.immutable.List.apply(List.scala:79)
+	dotty.tools.dotc.util.Signatures$.countParams(Signatures.scala:501)
+	dotty.tools.dotc.util.Signatures$.applyCallInfo(Signatures.scala:186)
+	dotty.tools.dotc.util.Signatures$.computeSignatureHelp(Signatures.scala:94)
+	dotty.tools.dotc.util.Signatures$.signatureHelp(Signatures.scala:63)
+	scala.meta.internal.pc.MetalsSignatures$.signatures(MetalsSignatures.scala:17)
+	scala.meta.internal.pc.SignatureHelpProvider$.signatureHelp(SignatureHelpProvider.scala:51)
+	scala.meta.internal.pc.ScalaPresentationCompiler.signatureHelp$$anonfun$1(ScalaPresentationCompiler.scala:375)
+```
+#### Short summary: 
+
+java.lang.IndexOutOfBoundsException: 0
