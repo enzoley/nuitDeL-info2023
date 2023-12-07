@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head th:insert="fragments/bootstrap-fragment">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Naturellement Quizz</title>
+
 </head>
 <body>
-<div th:each="question : ${questions}">
+<h1 class=" d-flex justify-content-center">Naturellement Quizz</h1>
+<div class="bg-secondary p-3 mb-2 rounded d-flex" th:each="question : ${questions}">
     <span th:text="${question.getText()}"></span>
     <div th:each="reponse:${reponses}">
         <button th:text="${reponse.getText()}"></button>
