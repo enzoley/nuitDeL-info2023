@@ -1,10 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head th:insert="~{fragments/bootstrap-fragment}">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Sauvez la forêt !</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    ul {
+      list-style: none; /* Supprimez les puces par défaut */
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+
+    li {
+            list-style: none; /* Supprimez les puces pour les éléments li */
+            width: 20%; /* Largeur des éléments pour assurer deux colonnes avec un petit espacement */
+            margin-bottom: 10px;
+            margin-right: 10px; /* Ajoutez une marge à droite pour créer l'espace entre les boutons */
+        }
+    
+  </style>
 </head>
 <body>
-
+    <h1 style="text-align: center; margin-bottom: 20px;"> Question donnée </h1>
+    <div class = "justify-content-center d-flex position-absolute top-50 start-50 translate-middle">
+        <ul class = "list-unstyled mb-5">
+            <li  class="mb-5 me-5"> <button class="btn btn-outline-success"> test avec une réponse + longue </button> </li>
+            <li  class="mb-5 me-5"> <button class="btn btn-outline-success"> test avec une réponse + longue </button> </li>
+        </ul>
+        <ul  class = "list-unstyled mb-5">
+            <li  class="mb-5 ms-5"> <button type="button" class="btn btn-outline-success"> test avec une réponse + longue </button> </li>
+            <li  class="mb-5 ms-5"> <button class="btn btn-outline-success"> test avec une réponse + longue </button> </li>
+        </ul>
+    </div>
 </body>
 </html>
