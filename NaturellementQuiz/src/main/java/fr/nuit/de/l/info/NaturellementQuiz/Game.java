@@ -1,8 +1,8 @@
 package fr.nuit.de.l.info.NaturellementQuiz;
 
-import java.util.List;
+import java.util.Set;
 
 public class Game {
 
-    public static List<Integer> listIdQuestion ;
+    public static Set<Integer> listIdQuestion ;
 }
