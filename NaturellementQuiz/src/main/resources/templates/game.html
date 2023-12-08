@@ -23,16 +23,13 @@
   </style>
 </head>
 <body>
-    <h1 style="text-align: center; margin-bottom: 20px;"> Question donnée </h1>
-    <div class = "justify-content-center d-flex position-absolute top-50 start-50 translate-middle">
-        <ul class = "list-unstyled mb-5">
-            <li  class="mb-5 me-5"> <button class="btn btn-outline-success"> test avec une réponse + longue </button> </li>
-            <li  class="mb-5 me-5"> <button class="btn btn-outline-success"> test avec une réponse + longue </button> </li>
-        </ul>
-        <ul  class = "list-unstyled mb-5">
-            <li  class="mb-5 ms-5"> <button type="button" class="btn btn-outline-success"> test avec une réponse + longue </button> </li>
-            <li  class="mb-5 ms-5"> <button class="btn btn-outline-success"> test avec une réponse + longue </button> </li>
-        </ul>
+    <h1 class="text-center mb-5 mt-5" th:text="${question.getText()}"> Question donnée </h1>
+    <div class="container d-flex flex-row justify-content-center mt-5 mb-5">
+        <div th:each="reponse : ${question.getReponses()}" class = "justify-content-center">
+            <div class="mb-5 me-5 h2">
+                <button class="btn btn-outline-success" th:text="${reponse.getText()}"></button>
+            </div>
+        </div>
     </div>
 </body>
 </html>

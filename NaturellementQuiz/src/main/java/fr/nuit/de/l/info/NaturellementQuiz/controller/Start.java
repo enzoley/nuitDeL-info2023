@@ -18,6 +18,7 @@ public class Start {
     @PostMapping("/start")
     public ModelAndView starting(@ModelAttribute User user){
         ModelAndView model = new ModelAndView("starting.html");
+        user.setScore(3);
         Game.player = user;
         userRepo.save(user);
         return model;
