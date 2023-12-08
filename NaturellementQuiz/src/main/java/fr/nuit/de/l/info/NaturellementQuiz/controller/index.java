@@ -17,8 +17,6 @@ public class index {
     @GetMapping("/")
     public ModelAndView accueil(){
         ModelAndView model = new ModelAndView("index.html");
-        model.addObject("questions",questionRepo.findAll());
-        model.addObject("reponses", reponseRepo.findAll());
         return model;
     }
 }

@@ -16,8 +16,5 @@ public class Reponse {
 
     private boolean reponse;
 
-    public String getText() {
-        return text;
-    }
 }
 

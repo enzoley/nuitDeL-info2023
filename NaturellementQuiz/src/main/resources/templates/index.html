@@ -6,13 +6,15 @@
 
 </head>
 <body>
-<h1 class=" d-flex justify-content-center">Naturellement Quizz</h1>
-<div class="bg-secondary p-3 mb-2 rounded d-flex" th:each="question : ${questions}">
-    <span th:text="${question.getText()}"></span>
-    <div th:each="reponse:${reponses}">
-        <button th:text="${reponse.getText()}"></button>
-    </div>
-</div>
+    <h1 class=" d-flex justify-content-center">Naturellement Quizz</h1>
+    <form>
+        <div class="mb-3">
+            <label for="pseudo-input">Pseudo</label>
+            <input class="form-control" type="text" id="pseudo-input" name="pseudo" required/>
+        </div>
+
+    </form>
+
 
 </body>
 </html>
