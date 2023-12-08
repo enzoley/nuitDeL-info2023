@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class Start {
@@ -15,8 +16,10 @@ public class Start {
     private UserRepo userRepo;
 
     @PostMapping("/start")
-    public void starting(@ModelAttribute User user){
+    public ModelAndView starting(@ModelAttribute User user){
+        ModelAndView model = new ModelAndView("starting.html");
         Game.player = user;
         userRepo.save(user);
+        return model;
     }
 }

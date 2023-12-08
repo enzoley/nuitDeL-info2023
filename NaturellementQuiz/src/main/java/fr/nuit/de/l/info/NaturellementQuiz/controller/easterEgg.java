@@ -10,7 +10,7 @@ public class easterEgg {
     @GetMapping("/easteregg")
     public ModelAndView easter(){
         ModelAndView model = new ModelAndView("easteregg.html");
-        model.addObject("image","../resources/templates/image/easteregg.jpg");
+        model.addObject("image", "static/images/easteregg.jpg");
         return model;
     }
 }
