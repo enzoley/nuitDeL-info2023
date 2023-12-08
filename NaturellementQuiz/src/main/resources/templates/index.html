@@ -8,7 +8,7 @@
 </head>
 
 
-<body style= "background-image: url(5b49ecc1-e709-446f-b84a-88ca344eb22a.jpg);height: 100vh;">
+<body style="background-image: url(5b49ecc1-e709-446f-b84a-88ca344eb22a.jpg);height: 100vh;">
     <script>
         const keysPressed = {
             'v': false,
@@ -25,7 +25,7 @@
             keysPressed[event.key] = true;
 
             if (checkKeysPressed()) {
-                window.location.href = 'easteregg.html';
+                window.location.href = '/easteregg';
             }
         });
 
@@ -33,22 +33,24 @@
             keysPressed[event.key] = false;
         });
     </script>
-    <div class=" d-flex justify-content-center mb-5">
+    <div class=" d-flex justify-content-center mb-5" style="background-color: wheat; padding: 15px;">
         <h1>Naturellement Quizz</h1>
     </div>
     <div class="d-flex justify-content-center mb-5">
         <form action="/start" method="post">
             <div class="mb-5">
                 <label class="m-auto" for="pseudo-input"></label>
-                <input class="form-control" type="text" id="pseudo-input" name="pseudo" placeholder="Enter votre pseudo" 
-                style="text-align: center;" required />
+                <input class="form-control" type="text" id="pseudo-input" name="pseudo" placeholder="Enter votre pseudo"
+                    style="text-align: center;" required />
             </div>
-            <div class="d-flex justify-content-center mb-5">
+            <div class="d-flex justify-content-center mb-5"
+                style="background-color: wheat; padding: 15px;border-radius: 20px;">
                 <h2>Tentez de sauver la forêt !</h2>
             </div>
             <div class="d-flex justify-content-center">
                 <label for="start"></label>
-                <input class="btn btn-success form-control" id="start" style="margin-top: 30px;" rel="/game/1" type="submit" name="start" value="Start"/>
+                <input class="btn btn-success form-control" id="start" style="margin-top: 30px;" rel="/game/1"
+                    type="submit" name="start" value="Start" />
             </div>
         </form>
 
