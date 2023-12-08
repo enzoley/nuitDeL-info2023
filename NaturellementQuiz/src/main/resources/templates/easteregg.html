@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head th:insert="fragments/bootstrap-fragment">
+<head th:insert="~{fragments/bootstrap-fragment}">
     <meta charset="UTF-8">
     <title>Trouvé !</title>
 
@@ -10,7 +10,7 @@
 <body>
     <h1 class=" d-flex justify-content-center">Trouvé !</h1>
     <div class="content">Vous avez trouvé l'easter egg !</div>
-    <img src="image/easteregg.jpg" alt="easter-egg">
+    <img th:src="@{/images/{image}}" alt="easter-egg">
     <div class="back">
         <a href="index.html">Retour</a>
     </div>
