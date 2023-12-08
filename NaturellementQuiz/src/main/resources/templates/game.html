@@ -59,11 +59,18 @@
         const dialogS = $('#success')
         const dialogF = $('#failure')
         const formF = $('#form-failure')
+
         const formS = $('#form-success')
         const failure = parseInt(new URLSearchParams(window.location.search).get("failure"));
+        formF.on("submit",function (event){
+            event.preventDefault()
+            window.location = "/game?failure=" + (failure +1)
+        })
+        formS.on("submit",function (event){
+            event.preventDefault()
+            window.location = "/game?failure=" + failure
+        })
 
-        formF.attr('action', "/game?failure=" + (failure +1) );
-        formS.attr('action', "/game?failure=" + failure);
         $('button').on('click',function (){
             if($(this).attr("data-success")==="true"){
                 console.log('youpi')
