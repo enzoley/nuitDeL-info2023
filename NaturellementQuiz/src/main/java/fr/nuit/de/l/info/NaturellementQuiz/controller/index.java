@@ -16,7 +16,6 @@ public class index {
 
     @GetMapping("/")
     public ModelAndView accueil(){
-        ModelAndView model = new ModelAndView("index.html");
-        return model;
+        return new ModelAndView("index.html");
     }
 }

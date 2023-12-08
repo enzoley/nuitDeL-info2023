@@ -9,6 +9,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 public class NaturellementQuizzApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(NaturellementQuizzApplication.class, args);
 	}
 
