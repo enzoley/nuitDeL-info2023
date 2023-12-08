@@ -19,11 +19,12 @@ public class game {
     @Autowired
     private UserRepo userRepo;
 
-    @GetMapping("/game/{round}")
-    public ModelAndView gameStart(@PathVariable(value = "round") int round) {
+    @GetMapping("/game")
+    public ModelAndView gameStart(@RequestParam int failure) {
         ModelAndView gameModel = new ModelAndView("game.html");
         gameModel.addObject("user",Game.player );
-
+        gameModel.addObject("round",Game.listIdQuestion.size()+1);
+        gameModel.addObject("vie",Game.player.getScore()-failure);
         int size = questionRepo.findAll().size();
         Long random = getRandom(size);
         if (questionRepo.findById(random).isPresent()) {

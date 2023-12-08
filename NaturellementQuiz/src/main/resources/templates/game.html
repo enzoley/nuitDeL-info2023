@@ -4,32 +4,76 @@
     <meta charset="UTF-8">
     <title>Sauvez la forêt !</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    ul {
-      list-style: none; /* Supprimez les puces par défaut */
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      text-align: center;
-    }
+    <style>
+        ul {
+            list-style: none; /* Supprimez les puces par défaut */
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+        }
 
-    li {
+        li {
             list-style: none; /* Supprimez les puces pour les éléments li */
             width: 20%; /* Largeur des éléments pour assurer deux colonnes avec un petit espacement */
             margin-bottom: 10px;
             margin-right: 10px; /* Ajoutez une marge à droite pour créer l'espace entre les boutons */
         }
-    
-  </style>
+
+    </style>
 </head>
 <body>
-    <h1 class="text-center mb-5 mt-5" th:text="${question.getText()}"> Question donnée </h1>
-    <div class="container d-flex flex-row justify-content-center mt-5 mb-5">
-        <div th:each="reponse : ${question.getReponses()}" class = "justify-content-center">
-            <div class="mb-5 me-5 h2">
-                <button class="btn btn-outline-success" th:text="${reponse.getText()}"></button>
-            </div>
+<h1 class="text-center mb-5 mt-5" th:text="${question.getText()}"> Question donnée </h1>
+<div > Round = <span th:text = "${round}"></span></div>
+<div > Vie = <span th:text = "${vie }"></span></div>
+<div class="container d-flex flex-row justify-content-center mt-5 mb-5">
+    <div th:each="reponse : ${question.getReponses()}" class="justify-content-center">
+        <div class="mb-5 me-5 h2">
+            <button th:attr="data-success=${reponse.isReponse()}" class="btn btn-outline-success" th:text="${reponse.getText()}"></button>
         </div>
     </div>
+</div>
+<dialog id="success">
+    <div class="container justify-content-center">
+        <h1 class="text-center">Bravo !</h1>
+        <p></p>
+        <form id="form-success" method="get">
+            <input class="form-control" type="submit" value="Suivant"/>
+        </form>
+    </div>
+    </div>
+</dialog>
+<dialog id="failure">
+    <div class="container justify-content-center">
+        <h1 class="text-center">Oh dommage !</h1>
+        <p></p>
+        <form id="form-failure" method="get">
+            <div class="justify-content-end col-sm-9">
+                <input class="form-control w-25" type="submit" value="Suivant"/>
+            </div>
+        </form>
+    </div>
+</dialog>
+<script>
+    $(document).ready(function (){
+        const dialogS = $('#success')
+        const dialogF = $('#failure')
+        const formF = $('#form-failure')
+        const formS = $('#form-success')
+        const failure = parseInt(new URLSearchParams(window.location.search).get("failure"));
+
+        formF.attr('action', "/game?failure=" + (failure +1) );
+        formS.attr('action', "/game?failure=" + failure);
+        $('button').on('click',function (){
+            if($(this).attr("data-success")==="true"){
+                console.log('youpi')
+                dialogS.show()
+            }else{
+                console.log('NUL')
+                dialogF.show()
+            }
+        })
+    })
+</script>
 </body>
 </html>

@@ -12,9 +12,9 @@ public class Reponse {
 
     private String text;
 
-    private String description;
-
     private boolean reponse;
+
+
 
 }
 
